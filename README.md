@@ -15,3 +15,19 @@ Save the candidate entities and sentences as a NER dataset in a suitable format,
 Train a standard NER model, such as BERT or CRF, on the generated NER dataset, optionally fine-tuning it on a small amount of human-labeled data.
 Evaluate the NER model on a test set of labeled data and compare its performance to fully supervised methods.
 
+
+
+# Steps to run the demo
+
+## 1. Install the dependencies
+
+1. Instructions to install the LLM are in the link below
+https://agi-sphere.com/install-llama-mac/
+https://python.langchain.com/docs/modules/model_io/models/llms/integrations/llamacpp
+2. Install requirements.txt using the following command
+```bash
+pip3 install requirements.txt
+```
+3. Run the Notebook `./notebooks/qna_with_plain_vector_search.ipynb`
+
+
