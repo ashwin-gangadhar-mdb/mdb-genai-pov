@@ -1,0 +1,5 @@
+sentencet-transformers
+torch 
+numpy 
+sentencepiece
+llama-cpp-python
