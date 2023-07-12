@@ -6,15 +6,17 @@ Currently a vannilla vector search implementation is demonstrated with the repo.
 <center><img src="./images/Innovaare_QNA_vectorserach.drawio.png"></center>
 
 Here are some steps to implement the web page context:
-Choose a pre-trained QA model and tokenizer from the Hugging Face library, such as BERT or DensePhrases.
-Define the natural language question prompts for the entity types of interest, such as “Which people?” or “Which locations?”.
-Load a corpus of text documents from which to extract entities, such as Wikipedia or your own domain-specific data.
-For each document in the corpus, apply the QA model with each question prompt to retrieve candidate entities and sentences.
-Apply some normalization rules to clean and filter the candidate entities, such as removing punctuation, trimming whitespace, and matching case.
-Save the candidate entities and sentences as a NER dataset in a suitable format, such as BIO or JSON.
-Train a standard NER model, such as BERT or CRF, on the generated NER dataset, optionally fine-tuning it on a small amount of human-labeled data.
-Evaluate the NER model on a test set of labeled data and compare its performance to fully supervised methods.
-
+* Choose a pre-trained QA model and tokenizer from the Hugging Face library, such as BERT or DensePhrases.
+* Define the natural language question prompts for the entity types of interest, such as “Which people?” or “Which locations?”.
+* Load a corpus of text documents from which to extract entities, such as Wikipedia or your own domain-specific data.
+* For each document in the corpus, apply the QA model with each question prompt to retrieve candidate entities and sentences.
+* Apply some normalization rules to clean and filter the candidate entities, such as removing punctuation, trimming whitespace, and matching case.
+* Save the candidate entities and sentences as a NER dataset in a suitable format, such JSON or Document.
+* Now to perform the Question answering task index the data in mongodb vector store and prepare the vector index on the relevant field.
+* So the QNA functionalitity can be achieved in two ways on top on custom or local knowledge base using a privately hosted LLM
+    * Using Prompt Engineering and results from Vector store
+    * Using QA chain from LangChain along with Vector Store
+ 
 
 
 # Steps to run the demo
