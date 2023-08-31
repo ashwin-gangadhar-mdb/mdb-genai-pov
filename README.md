@@ -1,4 +1,4 @@
-## Vector Search + GEN AI Application Demo for Innovaare
+## Vector Search + GEN AI Application Demo
 Using MongoDB as the vector search store to store both the Vector representation of all documents + Meta information can help customers achieve a personalized/customized Q&A or chatbot experience with their own data or corpus. Steps to achieve the same.
 
 Currently a vannilla vector search implementation is demonstrated with the repo. This repo will be incrimentally updated to carry a QNA using the LLM and prompt engineering technique
